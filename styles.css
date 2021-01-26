@@ -17,8 +17,7 @@ a:hover {
    text-decoration: underline;
 }
 
-
-a:visited, a:visited {
+.nav-links:visited {
    color: var(--link-font-color);
 }
 
@@ -39,6 +38,45 @@ nav, ul {
 }
 
 
+/* BUTTON STLYE */
+
+button {
+   background-color: #f8f9fa;
+   border: 1px solid #f8f9fa;
+   cursor: pointer;
+   border-radius: 4px;
+   color: #3c4043;
+   font-size: 14px;
+   margin: 11px 4px;
+   padding: 10px 15px;
+}
+
+button:hover {
+   box-shadow: 0px 0px 2px rgb(173, 173, 173);
+}
+
+button:active, button:focus {
+   outline: 1px solid royalblue;
+   border-radius: 4px;
+}
+
+/* INPUT STYLES */
+
+input {
+   width: 100%;
+   border: 1px solid #dfe1e5;
+   border-radius: 24px;
+   height: 44px;
+}
+
+input:hover {
+   box-shadow: #3c4043;
+}
+
+input:focus {
+   outline: none;
+}
+
 /* LAYOUT */
 
 nav, ul {
@@ -46,4 +84,24 @@ nav, ul {
    justify-content: space-between;
    align-items: center;
    vertical-align: middle;
+}
+
+main {
+   display: flex;
+   justify-content: space-evenly;
+   text-align: center;
+   padding-top: 13%;
+}
+
+.main-logo {
+   padding: 0 100px;
+}
+
+.main-logo, .main-searchbar {
+   padding-bottom: 4%;
+}
+
+.footer-links {
+   display: flex;
+   justify-content: space-between;
 }
