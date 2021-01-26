@@ -1,0 +1,49 @@
+/* GLOBAL */
+:root {
+   --link-font-size: 13px;
+   --link-font-color: rgba(0,0,0,0.87);
+}
+
+body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+
+a:visited, a:visited {
+   color: var(--link-font-color);
+}
+
+li {
+   list-style-type: none;
+   padding: 0 15px;
+}
+
+img {
+   width: 100%;
+}
+
+/* TYPOGRAPHY */
+
+nav, ul {
+   font-size: var(--link-font-size);
+   color: var(--link-font-color);
+}
+
+
+/* LAYOUT */
+
+nav, ul {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   vertical-align: middle;
+}
