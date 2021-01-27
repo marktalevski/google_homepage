@@ -84,6 +84,7 @@ nav, ul {
    justify-content: space-between;
    align-items: center;
    vertical-align: middle;
+   color: var(--link-font-color);
 }
 
 main {
@@ -99,6 +100,13 @@ main {
 
 .main-logo, .main-searchbar {
    padding-bottom: 4%;
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
 }
 
 .footer-links {
