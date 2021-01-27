@@ -1,0 +1,157 @@
+/* GLOBAL */
+
+body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 100;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+/* LAYOUT */
+
+.container {
+   display: grid;
+   height: 100vh;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto 1fr auto auto;
+   grid-template-areas: 
+      "nav-left nav-right"
+      "main main"
+      "footer footer"
+      "footer-left footer-right";
+}
+
+.nav-left {
+   grid-area: nav-left;
+   padding: 10px 0;
+}
+
+.nav-left a {
+   padding-left: 15px; 
+}
+
+.nav-right {
+   grid-area: nav-right;
+   display: flex;
+   justify-content: flex-end;
+   padding: 10px 0;
+}
+
+.nav-right a {
+   padding-right: 15px;
+}
+
+main {
+   grid-area: main;
+   display: flex;
+   justify-content: center;
+   padding-top: 160px;
+   text-align: center;
+}
+
+.main-logo, .main-input {
+   margin-bottom: 15px;
+}
+
+.footer-country {
+   grid-area: footer;
+   padding-left: 15px;
+}
+
+.footer-links-left {
+   grid-area: footer-left;
+}
+
+.footer-links-left a {
+   padding-left: 15px;
+}
+
+.footer-links-right {
+   grid-area: footer-right;
+   display: flex;
+   justify-content: flex-end;  
+}
+
+.footer-links-right a{
+   padding-right: 15px;
+}
+
+/* STYLES */
+
+   /* COLOR PALETTE */
+
+   :root {
+      --header-link-color: rgba(0,0,0,0.87);
+      --header-link-color-visited: rgba(0,0,0,0.87);
+      --footer-link-color: #70757a;
+      --footer-link-color-visited: #70757a;
+      --button-font-color: #3c4043;
+      --button-bg-color: #f8f9fa;
+      --button-color: #3c4043;
+      --footer-bg-color: #f2f2f2;
+}
+   
+      /* COLOR */
+
+      .nav-left a {
+         color: var(--header-link-color);
+      }
+
+      .nav-right a {
+         color: var(--header-link-color);
+      }
+
+      .footer-country, .footer-links-left, .footer-links-right {
+         background-color: var(--footer-bg-color);
+         color: var(--footer-link-color);
+      }
+
+      .footer-country a, .footer-links-left a, .footer-links-right a {
+         color: var(--footer-link-color);
+      }
+
+      button {
+         color: var(--button-color);
+         background-color: var(--button-bg-color);
+      }
+
+   /* TYPOGRAPHY STYLES*/
+
+   :root {
+      --button-font-size: 14px;
+   }
+
+      /* TYPOGRAPHY */
+
+
+
+   /* BUTTON STYLE */
+
+   button {
+      font-size: 14px;
+      border-radius: 4px;
+      margin: 11px 4px;
+      padding: 0px 16px;
+      height: 36px;
+      line-height: 27px;
+   }
+
+   /* INPUT STYLE */
+
+   input {
+      background: #fff;
+      border: 1px solid #dfe1e5;
+      box-shadow: none;
+      border-radius: 24px;
+      height: 44px;
+      width: 500px;
+   }
+
+      
